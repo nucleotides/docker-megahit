@@ -16,3 +16,5 @@ RUN cd ${MEGAHIT_DIR} &&\
 
 ADD Procfile /
 ADD run /usr/local/bin/
+
+ENTRYPOINT ["run"]
