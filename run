@@ -35,4 +35,6 @@ if [[ -z ${CMD} ]]; then
 fi
 eval ${CMD}
 
+python ${MEGAHIT_DIR}/megahit ${FLAGS} --cpu-only -r ${READS} -m ${MEM} -l ${MAX_READ_LENGTH}
+
 cp ${TMP_DIR}/megahit_out/final.contigs.fa ${ASSEMBLY}
